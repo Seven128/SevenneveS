@@ -1,0 +1,169 @@
+#SignUpOut {
+    width: 100%;
+    text-align: center;
+    /* display: table; */
+}
+
+#SignUp {
+    width: 65%;
+    /* display: table-cell; */
+    display: inline-block;
+    position: relative;
+    margin-top: 200px;
+}
+
+#SignUpHead img {
+    margin: -220px 0 0 -50px;
+    transition: margin 0.2s;
+    transition-timing-function: linear;
+}
+
+#SignUpHead {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    border: 1px solid black;
+    overflow: hidden;
+}
+
+#SignUpChange {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    transition: background-color 1s,opacity 1s,border-radius 1s,margin 0.3s;
+    transition-timing-function: linear;
+    width: 30px;
+    height: 30px;
+    background-color: red;
+}
+
+form {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+form span {
+    margin-left: 50px;
+}
+
+#SignUpBody {
+    position: relative;
+    width: 100%;
+    padding: 40px 0;
+    border: 1px solid black;
+    text-align: center;
+    display: table;   
+}
+
+#SignUpBody form input, select{
+    outline: none;
+    font-size: 1em;
+    padding: 5px;
+    margin: 10px 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#SignUpBody input[type="radio"] + label {
+    padding: 0 30px 0 10px;
+}
+
+select {
+    padding-bottom: 10px;
+}
+
+#SignUpBody input[type="radio"] {
+    margin: 10px 0;
+}
+
+#SignUpBody form #submit {
+    background-color: rgb(114, 188, 231);
+    border: 0px solid black;
+    padding: 8px 26px;
+    border-radius: 40px;
+    box-shadow: 0px 0px 5px gray;
+    cursor: pointer;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+
+#add {
+    position: absolute;
+    border-radius: 100%;
+    font-size: 2em;
+    padding: 0 12px 5px 12px;
+    top: 100%;
+    right: 50%;
+    background-color: rgb(139, 231, 63);
+    border: 2px solid white;
+    color: white;
+    cursor: pointer;
+    transition: all 0.5s ease-in-out;
+    transform: translate(50%,-50%);
+    z-index: 100;
+}
+
+
+#addNew {
+    position: absolute;
+    border-radius: 20px;
+    padding: 40px 20px;
+    background: rgba(203, 238, 233,0.8);
+    top: 100%;
+    right: 50%;
+    transform: translate(50%,1em);
+    text-align: start;
+    display: none;
+}
+
+#addNew input {
+    border: 1px solid black;
+    padding: 3px;
+    font-size: 1em;
+    margin: 5px;
+}
+
+.isLong {
+    display: none;
+}
+
+.delete {
+    position: absolute;
+    padding: 3px;
+    background-color: red;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-bottom: -20px;
+    border: 1px solid rgb(187, 80, 80);
+    display: none;
+}
+
+
+
+textarea {
+    padding: 5px;
+    vertical-align: top;
+    font-size: 1.5em;
+    resize: none;
+}
+
+/* input[type="number"] {
+    -webkit-appearance: none !important;
+    margin: 0; 
+    -moz-appearance:textfield;
+} */
+
+.addOut {
+    text-align: center;
+}
+
+
+#addNew .add { 
+    background-color: rgb(189, 192, 191);
+    border: 0px solid black;
+    padding: 5px 10px;
+    margin: 15px 0 0 0 ;
+    box-shadow: 0px 0px 5px gray;
+    cursor: pointer;
+}

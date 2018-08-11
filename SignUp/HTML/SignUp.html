@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="../CSS/SignUp.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="SignUpOut">
+        <div id="SignUp">
+            <div id="SignUpHead">
+                <img src="http://i1.073img.com/131231/4343693_103611_1.jpg">
+                <span id="SignUpChange"></span>
+            </div>
+            <div id="SignUpBody">
+                <form action="demo_form.asp" method="get" id="user_form">
+                    <span>姓名：</span><input type="text" name="name" pattern="^(?!_)(?!.*?_$)[a-zA-Z0-9_\u4e00-\u9fa5]{10}$" required="required">
+                    <span>学号：</span><input type="text" name="studentNumber" pattern="^311\d{7}$" required="required"></br>
+                    <span>性别：</span><input type="radio" name="sex" required="required" id="man"><label for="man">男</label>
+                    <input type="radio" name="sex" required="required" id="girl"><label for="girl">女</label></br>
+                    <span>学院：</span>
+                    <select name="major" required="required">
+                        <option value="机电工程学院">机电工程学院</option>
+                        <option value="自动化学院">自动化学院</option>
+                        <option value="轻工化工学院">轻工化工学院</option>
+                        <option value="信息工程学院">信息工程学院</option>
+                        <option value="土木与交通工程学院">土木与交通工程学院</option>
+                        <option value="计算机学院">计算机学院</option>
+                        <option value="材料与能源学院">材料与能源学院</option>
+                        <option value="环境科学与工程学院">环境科学与工程学院</option>
+                        <option value="外国语学院">外国语学院</option>
+                        <option value="物理与光电工程学院">物理与光电工程学院</option>
+                        <option value="管理学院">管理学院</option>
+                        <option value="应用数学学院">应用数学学院</option>
+                        <option value="政法学院">政法学院</option>
+                        <option value="经济与贸易学院">经济与贸易学院</option>
+                        <option value="建筑与城市规划学院">建筑与城市规划学院</option>
+                        <option value="艺术与设计学院">艺术与设计学院</option>
+                        <option value="继续教育学院">继续教育学院</option>
+                    </select>
+                    <span>专业班级：</span><input type="text" name="class" pattern="^(?!_)(?!.*?_$)[a-zA-Z0-9_\u4e00-\u9fa5]{20}$" required="required"></br>
+                    <span>电话号码：</span><input type="text" name="phoneNumber" required="required" pattern="^(13[0-9]|14[579]|15[0-3,5-9]|16[6]|17[0135678]|18[0-9]|19[89])\d{8}$"></br>
+                    <input type="submit" value="报 名" id="submit">
+                </form>
+                <span id="add">+</span>
+                <div id="addNew">
+                    <div class="content">
+                        <label>请双击这里编辑：</label>
+                        <input  type="text" name="DIY">
+                        <span class="delete">Delete</span>
+                    </div>
+                    是否必填：<input type="radio" name="isMust" required="required" id="isMustYes" form="user_form">
+                    <label for="isMustYes">是</label>
+                    <input type="radio" name="isMust" required="required" id="isMustNo" checked>
+                    <label for="isMustNo">否</label></br>
+                    是否是长文本框:<input type="radio" name="isLong" required="required" id="isLongYes">
+                    <label for="isLongYes">是</label>
+                    <input type="radio" name="isLong" required="required" id="isLongNo" checked>
+                    <label for="isLongNo">否</label></br>
+                    <div class="isLong">
+                        长文本框的高度：<input type="number" name="height" min="0" max="4" size="1">
+                        宽度：<input type="number" name="width" min="0" max="50" size="1">
+                    </div>
+                    限定输入最大字符数：<input type="number" name="quantity" min="0" max="80" size="1"></br>
+                    <div class="addOut">
+                        <button class="add">添加</button>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+<script src="D:\JQ\jquery-3.3.1.js"></script>
+<script type="text/javascript" src="../JavaScript/SignUp.js"></script>
+</body>
+</html>
